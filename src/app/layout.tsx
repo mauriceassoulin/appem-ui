@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Instrument_Serif, DM_Sans, JetBrains_Mono } from "next/font/google";
+import { DocsNav } from "@/components/docs-nav";
+import { TooltipProvider } from "@/components/appem";
 import "./globals.css";
 import "@/styles/tokens.css";
 
@@ -41,7 +43,12 @@ export default function RootLayout({
       lang="en"
       className={`${instrumentSerif.variable} ${dmSans.variable} ${jetbrainsMono.variable}`}
     >
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        <TooltipProvider>
+          <DocsNav />
+          {children}
+        </TooltipProvider>
+      </body>
     </html>
   );
 }
