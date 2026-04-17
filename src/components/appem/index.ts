@@ -109,3 +109,31 @@ export type { FormPageSkeletonProps } from "./form-page-skeleton";
 // 25. DashboardSkeleton
 export { DashboardSkeleton } from "./dashboard-skeleton";
 export type { DashboardSkeletonProps } from "./dashboard-skeleton";
+
+// 26. DataTable
+export { DataTable } from "./data-table";
+export type { DataTableProps, DataTableColumn } from "./data-table";
+
+// 27. Pagination
+export { Pagination, paginationSizeVariants } from "./pagination";
+export type { PaginationProps } from "./pagination";
+
+// 28. SearchBar
+export { SearchBar } from "./search-bar";
+export type { SearchBarProps } from "./search-bar";
+
+// 29. Modal
+export { Modal, ModalHeader, ModalBody, ModalFooter } from "./modal";
+export type { ModalProps, ModalHeaderProps, ModalBodyProps, ModalFooterProps } from "./modal";
+
+// 30. Dropdown
+export { Dropdown } from "./dropdown";
+export type { DropdownProps, DropdownItem, DropdownGroup } from "./dropdown";
+
+// 31. Breadcrumbs
+export { Breadcrumbs } from "./breadcrumbs";
+export type { BreadcrumbsProps, BreadcrumbItem } from "./breadcrumbs";
+
+// 32. FormFieldRenderer
+export { FormFieldRenderer } from "./form-field-renderer";
+export type { FormFieldRendererProps, RagicFieldType, FieldOption, FormFieldConfig } from "./form-field-renderer";
